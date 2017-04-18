@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="libs/jquery.mb.YTPlayer/css/jquery.mb.YTPlayer.min.css">
   <link rel="stylesheet" href="libs/slick/slick-theme.css">
   <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/popup/magnific-popup.css">
 
   <title>скутеры</title>
 </head>
@@ -21,6 +22,7 @@
     </div>
     <div class="video_back__mobile"></div>
     <header><!-- header  -->
+      <div class="header_cont">
       <div class="menu_1">
         <div class="menu_1__cont">
           <div class="menu_1__cont__item menu-btn"><i class="fa fa-bars " aria-hidden="true"></i></div>
@@ -99,13 +101,31 @@
           </div>
         </div>
       </section>
+      </div>
     </header><!--END header  -->
     <section class="certificate">
+      <div id="certificate_nav"></div>
       <ul class="certificate_list">
-        <li class="certificate_list__item back_item_1"></li>
-        <li class="certificate_list__item back_item_2"></li>
-        <li class="certificate_list__item back_item_3"></li>
-        <li class="certificate_list__item back_item_4"></li>
+        <li class="certificate_list__item back_item_1">
+          <a href="images/docstr1.jpg" class="z">
+            <img src="images/docstr1.jpg" alt="">
+          </a>
+        </li>
+        <li class="certificate_list__item back_item_2">
+          <a href="images/docstr2.jpg" class="z">
+            <img src="images/docstr2.jpg" alt="">
+          </a>
+        </li>
+        <li class="certificate_list__item back_item_3">
+          <a href="images/docstr3.jpg" class="z">
+            <img src="images/docstr3.jpg" alt="">
+          </a>
+        </li>
+        <li class="certificate_list__item back_item_4">
+          <a href="images/docstr4.jpg" class="z">
+            <img src="images/docstr4.jpg" alt="">
+          </a>
+        </li>
       </ul>
       <div class="description">
         <div class="certificate-decription_block">
@@ -231,6 +251,10 @@
         Гироскутеры Smart Balance Kiwano X-GO 9"
       </div>
       <div class="section_content">
+        <!-- <div class="product_grift">
+          <div class="str">Оригинайльная умка в одарок</div>
+          <img src="images/certificates_bg1.png" alt="PIZDEC NE RABOTAET">
+        </div> -->
         <div class="section_content__header">
           <div class="h_icons">
             <div class="icon__item">
@@ -265,6 +289,7 @@
           <div class="section_content__slider__item">
             <img src="images/kivano_zad.jpg" alt="">
           </div>
+
         </div>
         <div class="unslick">
           <div class="unslick__item">
@@ -277,6 +302,7 @@
             <img src="images/kivano_zad.jpg" alt="">
           </div>
         </div>
+      <img src="images/sumka.png" alt="PIZDEC NE RABOTAET" class="product_grift">
       </div>
       <div class="section_bar">
         <div class="section_bar__price">
@@ -285,8 +311,16 @@
             24 000 Р
           </div>
           <p class="saving">
+            Вы экономите
+          </p>
+
+        </div>
+        <div class="icon_saving">
+          <p>
+            30%
           </p>
         </div>
+
         <ul class="features">
           <li class="features_title">
             SMART BALANCE KIWANO OFF ROAD 9"
@@ -336,11 +370,12 @@
             <p class="sr">Есть</p>
           </li>
         </ul>
+        
         <div class="features__buttons">
-          <div href="#" class="btn-buy btn">
+          <a href="#hidden" class="btn-buy btn">
             <p>Купить</p>
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </div>
+          </a>
           <div href="#" class="btn-text btn">
             <p>
               Заказать тест-драйв
@@ -494,6 +529,37 @@
         противоположную движению сторону.</div>
     </div>
   </section>
+  <section class="test-section">
+    <div class="test-section__cont_img">
+      <img src="images/man.jpg" alt="man.jpg error">
+    </div>
+    <div class="test-section_content">
+      <div class="test_title">
+            Записаться на тест-драйв
+            гироскутера в центре Москвы
+      </div>
+      <p class="test_a">Москва, пер. Столешников 11</p>
+      <form action="" class="test_form">
+        <label for="test_input" class="test_label">+7</label>
+        <input type="text" class="test_input" placeholder="Номер телефона">
+        <button type="submit" name="button" class="test_btn">Записаться</button>
+      </form>
+    </div>
+  </section>
+  <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6aK7TIO" class="map"></iframe>
+
+  <footer>
+    <div class="footer_block1">
+      <div class="img_div1"></div>
+      © 2014-2017 <br>
+      Smart Balance<br>
+      Интернет-магазин гироскутеров <br>
+    </div>
+    <div class="footer_block2">
+      <p>+7 (495) 120-80-96</p>
+      <p>Москва, пер. Столешников 11</p>
+    </div>
+  </footer>
 </div><!--  wrapper-->
 
 
@@ -501,6 +567,8 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="libs/jquery.mb.YTPlayer/jquery.mb.YTPlayer.min.js"></script>
   <script type="text/javascript" src="libs/slick/slick.js"></script>
+  <script type="text/javascript" src="libs/popup/jquery.magnific-popup.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
+
 </body>
 </html>

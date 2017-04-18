@@ -175,16 +175,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .video_back {
-    display: none !important; }
-  .video_back__mobile {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 100px;
-    z-index: -3;
-    background-color: #6b4ad4;
-    /* IE9, iOS 3.2+ */
+  header {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
     /* Android 2.3- hack (needed for the actual radial gradient) */
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==), -webkit-gradient(radial, left bottom, 0, left bottom, 723, color-stop(0.015, #00a0f4), color-stop(0.869, #bf05ba));
@@ -193,6 +184,14 @@
     /* IE10+ */
     background-image: radial-gradient(ellipse farthest-corner at left bottom, #00a0f4 1.5%, #bf05ba 86.9%);
     background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner, #00a0f4 1.5%, #bf05ba 86.9%); }
+  .video_back {
+    display: none !important; }
+  .video_back__mobile {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 100px;
+    z-index: -3; }
   /* IE8- CSS hack */
   /* IE8- CSS hack */
   .menu_1 {
@@ -293,30 +292,34 @@
     .product-cat .descr {
       text-align: center;
       margin: 10px 0; }
-  .commodity-section_cont .section_content__header {
-    justify-content: center; }
-    .commodity-section_cont .section_content__header .h_icons {
-      margin: 10px; }
-    .commodity-section_cont .section_content__header .commodity-section .sm_battery {
-      justify-content: center; }
-  .commodity-section .section_bar {
-    flex-basis: 290px; }
-  .commodity-section .features {
-    width: 260px;
+  .commodity-section {
     margin-top: 20px; }
-    .commodity-section .features .features_title {
+    .commodity-section_cont .section_content__header {
+      justify-content: center; }
+      .commodity-section_cont .section_content__header .h_icons {
+        margin: 10px; }
+      .commodity-section_cont .section_content__header .commodity-section .sm_battery {
+        justify-content: center; }
+    .commodity-section .section_bar {
+      flex-basis: 290px;
+      justify-content: center; }
+    .commodity-section .features {
+      width: 260px;
+      margin: auto;
+      margin-top: 20px; }
+    .commodity-section .features_title {
       width: 90%;
       margin: auto; }
-  .commodity-section .features__buttons {
-    margin: auto;
-    margin-top: 20px; }
-  .commodity-section .section_content__slider {
-    max-width: 260px;
+  .features__buttons {
+    margin: auto !important;
+    margin-top: 20px !important; }
+  .section_content__slider {
+    max-width: 260px !important;
     display: flex !important;
     margin: auto;
     margin-top: 30px; }
-  .commodity-section .unslick {
-    width: 200px; }
+  .unslick {
+    width: 200px !important; }
   .advert__title {
     font-size: 25px; }
   .advert__descr {
@@ -338,17 +341,19 @@
   .call-back {
     flex-wrap: wrap; }
     .call-back__text {
-      flex-basis: 100px;
-      max-width: 300px;
-      flex-grow: 2;
+      flex-basis: 100%;
+      max-width: 100%;
       text-align: center;
       font-family: 'Rubik',sans-serif;
       padding-top: 30px; }
     .call-back__label {
-      font-size: 20px; }
+      font-size: 20px;
+      margin: 0 10px; }
     .call-back__input {
       width: 170px;
-      font-size: 20px; }
+      margin: 10px 0;
+      font-size: 20px;
+      text-align: center; }
     .call-back__btn {
       margin: 20px auto; }
   .ustr_section {
@@ -387,10 +392,53 @@
       width: 80%;
       margin: auto;
       color: #fff;
-      margin-bottom: 60px; } }
+      margin-bottom: 60px; }
+  .test-section__cont_img {
+    display: none; }
+    .test-section__cont_img img {
+      display: none; }
+  .test-section .test-section_content {
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; }
+  .test_a {
+    text-align: center; }
+  .test_title {
+    font-size: 27px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Rubik',sans-serif;
+    line-height: 45px; }
+  .test_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+  .test_label {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0px;
+    font-family: 'Rubik',sans-serif; }
+  .test_input {
+    flex-basis: 170px;
+    margin: auto;
+    align-self: center;
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    color: #9C9C9C;
+    font-size: 23px;
+    border-radius: 5px;
+    font-family: 'Rubik',sans-serif;
+    background: #E0E0E0; }
+  .test_btn {
+    margin: 10px auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 655px) {
+  .wrapper {
+    width: 99%; }
   .header-section__head {
     flex-wrap: wrap; }
     .header-section__head__item_logo {

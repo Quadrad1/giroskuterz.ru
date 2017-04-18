@@ -6,8 +6,9 @@
 html {
   font-size: 16px; }
 
-.wraper {
+.wrapper {
   width: 100%;
+  flex-wrap: wrap;
   display: flex;
   font-size: 16px;
   position: relative; }
@@ -27,6 +28,12 @@ html {
     opacity: 0.5; }
 
 header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.header_cont {
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -236,6 +243,13 @@ header {
         font-size: 17px;
         font-family: 'Rubik', sans-serif; }
 
+#certificate_nav {
+  height: 150%;
+  width: calc(height);
+  position: absolute;
+  background: red;
+  left: 12%; }
+
 .certificate {
   display: flex;
   width: 100%;
@@ -254,26 +268,29 @@ header {
       height: 215px;
       margin: 10px;
       cursor: pointer; }
+      .certificate_list__item img {
+        max-width: 90%;
+        margin: 20px 0 0 7px; }
     .certificate_list .back_item_1 {
-      background-image: url(../images/certificate_border.png), url(../images/2885-s3.jpg);
-      background-position: -12px 0px,-1px 14px;
-      background-size: 174px,154px;
+      background-image: url(../images/certificate_border.png);
+      background-position: -12px 0px;
+      background-size: 174px;
       background-repeat: no-repeat;
       position: relative; }
     .certificate_list .back_item_2 {
-      background-image: url(../images/certificate_border.png), url(../images/docstr3.jpg);
+      background-image: url(../images/certificate_border.png), url(../images/docstr2.jpg);
       background-position: -12px 0px,2px 18px;
       background-size: 174px,144px;
       background-repeat: no-repeat;
       position: relative; }
     .certificate_list .back_item_3 {
-      background-image: url(../images/certificate_border.png), url(../images/docstr4.jpg);
+      background-image: url(../images/certificate_border.png), url(../images/docstr3.jpg);
       background-position: -12px 0px,2px 18px;
       background-size: 174px,144px;
       background-repeat: no-repeat;
       position: relative; }
     .certificate_list .back_item_4 {
-      background-image: url(../images/certificate_border.png), url(../images/sert-vtech.jpg);
+      background-image: url(../images/certificate_border.png), url(../images/docstr4.jpg);
       background-position: -12px 0px,2px 18px;
       background-size: 174px,144px;
       background-repeat: no-repeat;
@@ -301,12 +318,12 @@ header {
   .certificate .certificate-bg1 {
     position: absolute !important;
     width: 325px;
-    bottom: -50px;
-    left: -110px; }
+    bottom: -64px;
+    left: -51px; }
   .certificate .certificate-bg2 {
     position: absolute !important;
     width: 300px;
-    bottom: -50px;
+    bottom: -79px;
     right: 0; }
 
 .product-cat {
@@ -371,6 +388,13 @@ header {
     color: #444444;
     font-family: arial;
     font-size: 13px; }
+
+.product_grift {
+  width: 296px;
+  height: 77px;
+  display: flex;
+  z-index: 1;
+  margin: 10px auto; }
 
 .commodity-section {
   width: 100%;
@@ -438,7 +462,7 @@ header {
       padding-left: 30px;
       display: flex;
       flex-wrap: wrap;
-      width: 150px;
+      width: 200px;
       line-height: 35px;
       color: #f4f300;
       font-size: 2.1rem;
@@ -456,6 +480,17 @@ header {
     color: #C650BC;
     font-family: 'Rubik', sans-serif;
     font-weight: 600; }
+  .commodity-section .icon_saving {
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/skidka.png);
+    background-repeat: no-repeat; }
+    .commodity-section .icon_saving p {
+      font-size: 30px;
+      margin: auto;
+      padding: 25px 9px;
+      font-weight: 600;
+      font-family: 'Rubik', sans-serif; }
   .commodity-section .features {
     display: flex;
     width: 300px;
@@ -532,6 +567,7 @@ header {
     max-width: 600px;
     display: flex !important;
     margin: auto;
+    position: relative;
     margin-top: 30px; }
     .commodity-section .section_content__slider__item {
       display: flex;
@@ -548,6 +584,18 @@ header {
       cursor: pointer; }
       .commodity-section .unslick .unslick__item img {
         max-width: 100%; }
+
+#hidden {
+  width: 50%;
+  background: #fff;
+  height: 500px;
+  margin: auto;
+  position: relative; }
+
+.left-block {
+  width: 100px;
+  height: 100px;
+  background: red; }
 
 .main_icons {
   width: 100%;
@@ -650,9 +698,10 @@ header {
     align-self: flex-start; }
 
 .input_cont {
-  align-self: center;
+  align-self: flex-start;
   width: 80%;
   margin: 0 auto;
+  margin-top: -76px;
   display: flex;
   justify-content: center;
   height: 90px;
@@ -701,9 +750,10 @@ header {
     width: 135px;
     align-self: center;
     display: block;
-    BORDER: 2px solid #fff;
+    border: 2px solid #fff;
     border-radius: 4px;
     margin: auto;
+    margin-top: -76px;
     color: #fff;
     padding: 14px 15px;
     font-size: 24px;
@@ -852,3 +902,114 @@ header {
     align-self: flex-start;
     font-family: 'Rubik',sans-serif;
     font-size: 13px; }
+
+.test-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px; }
+  .test-section .test-section_content {
+    align-self: center;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap; }
+
+.test_title {
+  width: 80%;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Rubik',sans-serif;
+  line-height: 45px; }
+
+.test_a {
+  width: 100%;
+  color: #fd4d4d;
+  margin: 26px auto;
+  text-decoration: underline; }
+
+.test_form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.test_label {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 15px;
+  font-family: 'Rubik',sans-serif; }
+
+.test_input {
+  flex-basis: 340px;
+  align-self: center;
+  border: none;
+  outline: none;
+  padding: 8px 13px;
+  color: #9C9C9C;
+  font-size: 23px;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-family: 'Rubik',sans-serif;
+  background: #E0E0E0; }
+
+.test_btn {
+  padding: 7px 35px;
+  margin: auto;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Rubik',sans-serif;
+  background-color: #7102d7;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMjUwMGY0IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC4wMTUiLz48c3RvcCBzdG9wLWNvbG9yPSIjYmYwNWJhIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(0.015, #2500f4), color-stop(1, #bf05ba));
+  /* Android 2.3 */
+  background-image: -webkit-linear-gradient(left, #012cff 1.5%, #bf05ba 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to right, #0261f1 1.5%, #bf05ba 100%);
+  background-image: -ms-linear-gradient(left, #2500f4 1.5%, #bf05ba 100%); }
+
+.map {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  border: none;
+  height: 300px; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.footer_block1 {
+  align-items: center;
+  display: flex;
+  flex-basis: 300px;
+  flex-grow: 1;
+  justify-content: center;
+  font-family: 'Rubik',sans-serif;
+  font-size: 13px; }
+
+.footer_block2 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: 23px;
+  font-family: 'Rubik',sans-serif; }
+  .footer_block2 p {
+    width: 100%;
+    text-align: center;
+    text-align: center; }
+  .footer_block2 p:first-child {
+    padding: 20px 0 0 0; }
+  .footer_block2 p:last-child {
+    padding: 0 0 20px 0;
+    color: #00b5e2;
+    border-bottom: 1px solid  #00b5e2;
+    font-size: 13px;
+    line-height: 2.5em; }

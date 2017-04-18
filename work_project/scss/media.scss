@@ -237,29 +237,27 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  header{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    /* Android 2.3- hack (needed for the actual radial gradient) */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==),
+        -webkit-gradient(radial, left bottom, 0, left bottom, 723,color-stop(0.015, rgb(0, 160, 244)),color-stop(0.869, rgb(191, 5, 186)));
+    /* Android 2.3 */
+    background-image: -webkit-radial-gradient(left bottom, ellipse farthest-corner,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
+    /* IE10+ */
+    background-image: radial-gradient(ellipse farthest-corner at left bottom,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
+    background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
+  }
 .video_back{
   display: none!important;
 }
 .video_back__mobile{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: absolute;
   top:100px;
   z-index: -3;
-  // background-image: url(http://igiroskuter.ru/images/upload/thinkstockphotos-599131852.jpg);
-  // background-size: cover;
 
-      background-color: #6b4ad4;
-      /* IE9, iOS 3.2+ */
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-      /* Android 2.3- hack (needed for the actual radial gradient) */
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSIwJSIgY3k9IjEwMCUiIHI9IjE0MS40MjEzNTYyMzczMDk1JSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwYTBmNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2JmMDViYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuODY5MDAwMDAwMDAwMDAwMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==),
-          -webkit-gradient(radial, left bottom, 0, left bottom, 723,color-stop(0.015, rgb(0, 160, 244)),color-stop(0.869, rgb(191, 5, 186)));
-      /* Android 2.3 */
-      background-image: -webkit-radial-gradient(left bottom, ellipse farthest-corner,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
-      /* IE10+ */
-      background-image: radial-gradient(ellipse farthest-corner at left bottom,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
-      background-image: -ms-radial-gradient(left bottom, ellipse farthest-corner,rgb(0, 160, 244) 1.5%,rgb(191, 5, 186) 86.9%);
   }
 
   /* IE8- CSS hack */
@@ -437,10 +435,14 @@
 
     .section_bar{
       flex-basis:290px;
+      justify-content: center;
     }
 
     .features{
       width: 260px;
+      margin: auto;
+      margin-top: 20px;
+}
       margin-top: 20px;
       .features_title{
         width: 90%;
@@ -449,19 +451,19 @@
 
     }
     .features__buttons{
-      margin: auto;
-      margin-top: 20px;
+      margin: auto!important;
+      margin-top: 20px!important;
     }
     .section_content__slider{
-      max-width: 260px;
+      max-width: 260px!important;
       display: flex!important;
       margin: auto;
       margin-top: 30px;
     }
     .unslick{
-      width: 200px;
+      width: 200px!important;;
     }
-  }
+
   // END commodity-section
   //advert
   .advert{
@@ -501,21 +503,22 @@
   .call-back{
     flex-wrap: wrap;
     &__text{
-      flex-basis: 100px;
-      max-width: 300px;
-      flex-grow: 2;
+      flex-basis: 100%;
+      max-width: 100%;
       text-align: center;
       font-family: 'Rubik',sans-serif;
       padding-top: 30px;
     }
     &__label{
       font-size: 20px;
-
-
+      margin: 0 10px;
     }
     &__input{
       width: 170px;
+      margin: 10px 0;
       font-size: 20px;
+      text-align: center;
+
     }
     &__btn{
       margin: 20px auto;
@@ -569,10 +572,69 @@
       margin-bottom: 60px;
     }
   }
+  //test-section
+  .test-section{
+    &__cont_img{
+      display: none;
+      img{
+        display: none;
+      }
+
+    }
+    .test-section_content{
+      align-self: center;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .test_a{
+    text-align: center;
+  }
+  .test_title{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Rubik',sans-serif;
+    line-height: 45px;
+  }
+  .test_form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+  .test_label{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0px;
+    font-family: 'Rubik',sans-serif;
+  }
+  .test_input{
+    flex-basis: 170px;
+    margin: auto;
+    align-self: center;
+    border:none;
+    outline: none;
+    padding: 8px 13px;
+    color: #9C9C9C;
+    font-size: 23px;
+    border-radius: 5px;;
+    font-family: 'Rubik',sans-serif;
+    background: #E0E0E0;
+  }
+  .test_btn{
+    margin: 10px auto;
+  }
+  //END test-section
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 655px) {
+  .wrapper{
+    width: 99%;
+  }
   // header-section
   .header-section{
     &__head{

@@ -37,3 +37,7 @@ $(".nav-slider").slick({
   asNavFor: '.gallery-slider',
   focusOnSelect: true
 });
+$('.z').magnificPopup({
+  type: 'image'
+});
+// $('.btn-buy').magnificPopup();
